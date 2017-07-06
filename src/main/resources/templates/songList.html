@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>List of Songs</title>
+
+</head>
+<body>
+
+	<h1 th:each="currentAlbum: ${album}" th:text="${currentAlbum.name}"></h1>
+
+	<div>
+		<ul th:each="currentSong: ${album.music}">
+			<a th:href="@{/songLyrics(id=${currentSong.id})}"
+				th:text="${currentSong.name}"></a>
+		
+		</ul>
+	
+	</div>
+
+</body>
+</html>

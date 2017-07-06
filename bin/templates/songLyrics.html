@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>Song Lyrics!</title>
+
+
+
+</head>
+<body>
+
+	<div th:each="song: ${song}">
+		<h1 th:text="${song.songName}"></h1>
+	
+	
+	</div>
+
+</body>
+</html>
