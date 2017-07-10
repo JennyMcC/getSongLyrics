@@ -31,6 +31,7 @@ public class Band {
 		return name;
 	}
 	
+	@SuppressWarnings("unused")
 	private Band() {
 		
 	}
