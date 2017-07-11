@@ -22,8 +22,8 @@ public class BandsPopulator implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Band brandNew = new Band("Brand New");
-		Band incubus = new Band("Incubus");
+		Band brandNew = new Band("Brand New", "/images/brandnew.jpg");
+		Band incubus = new Band("Incubus", "/images/incubusfish.jpg");
 		bandRepo.save(brandNew);
 		bandRepo.save(incubus);
 		

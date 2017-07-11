@@ -14,10 +14,13 @@
 	<div>
 		<ul th:each="currentBand: ${band}">
 			<a th:href="@{/albumList(id=${currentBand.id})}"
-				th:text="${currentBand.name}"></a>
+				th:text="${currentBand.name}" ></a>
+				
+				<img th:src="${currentBand.imgURL}"/>
 		</ul>
-	
+		
 	</div>
+	
 
 </body>
 </html>

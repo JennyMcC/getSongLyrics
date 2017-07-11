@@ -15,6 +15,7 @@ public class Band {
 	private Long id;
 	
 	private String name;
+	private String imgURL;
 	
 	@OneToMany(mappedBy = "band")
 	private Set<Album> tune;
@@ -31,13 +32,18 @@ public class Band {
 		return name;
 	}
 	
+	public String getImgURL() {
+		return imgURL;
+	}
+	
 	@SuppressWarnings("unused")
 	private Band() {
 		
 	}
 
-	public Band(String name) {
+	public Band(String name, String imgURL) {
 		this.name = name;
+		this.imgURL = imgURL;
 	}
 
 }
